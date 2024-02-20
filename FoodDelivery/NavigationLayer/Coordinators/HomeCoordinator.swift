@@ -7,4 +7,8 @@ class HomeCoordinator: Coordinator {
         vc.view.backgroundColor = .red
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    override func finish() {
+        print("AppCoordinatorFinish")
+    }
 }

@@ -7,4 +7,8 @@ class ListCoordinator: Coordinator {
         vc.view.backgroundColor = .green
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    override func finish() {
+        print("AppCoordinatorFinish")
+    }
 }

@@ -7,4 +7,8 @@ class OrderCoordinator: Coordinator {
         vc.view.backgroundColor = .yellow
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    override func finish() {
+        print("AppCoordinatorFinish")
+    }
 }

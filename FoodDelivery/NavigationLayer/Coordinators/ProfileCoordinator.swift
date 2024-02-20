@@ -7,4 +7,8 @@ class ProfileCoordinator: Coordinator {
         vc.view.backgroundColor = .blue
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    override func finish() {
+        print("AppCoordinatorFinish")
+    }
 }

@@ -36,6 +36,8 @@
 		17A951762B7DCF7100CE32C8 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A951752B7DCF7100CE32C8 /* ListCoordinator.swift */; };
 		17A951782B7DCF7600CE32C8 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A951772B7DCF7600CE32C8 /* ProfileCoordinator.swift */; };
 		17A9517A2B7DD01000CE32C8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A951792B7DD01000CE32C8 /* TabBarController.swift */; };
+		17A951802B7F324800CE32C8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9517F2B7F324800CE32C8 /* OnboardingViewController.swift */; };
+		17A951822B7F328600CE32C8 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A951812B7F328600CE32C8 /* OnboardingViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		17A951752B7DCF7100CE32C8 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		17A951772B7DCF7600CE32C8 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		17A951792B7DD01000CE32C8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		17A9517F2B7F324800CE32C8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		17A951812B7F328600CE32C8 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		179072CB2B7014B80061009F /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				17A9517B2B7F30F000CE32C8 /* UILayer */,
 				17A293422B7090C000FE2384 /* NavigationLayer */,
 				179072E02B7018FA0061009F /* Resources */,
 				179072CC2B7014B80061009F /* AppDelegate.swift */,
@@ -190,6 +195,23 @@
 				17A951772B7DCF7600CE32C8 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		17A9517B2B7F30F000CE32C8 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				17A9517E2B7F322300CE32C8 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		17A9517E2B7F322300CE32C8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				17A9517F2B7F324800CE32C8 /* OnboardingViewController.swift */,
+				17A951812B7F328600CE32C8 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,12 +304,14 @@
 				17A951762B7DCF7100CE32C8 /* ListCoordinator.swift in Sources */,
 				17A951702B7C836700CE32C8 /* OnboardingCoordinator.swift in Sources */,
 				17A9516E2B7C825F00CE32C8 /* AppCoordinator.swift in Sources */,
+				17A951802B7F324800CE32C8 /* OnboardingViewController.swift in Sources */,
 				17A951742B7DCF6000CE32C8 /* OrderCoordinator.swift in Sources */,
 				17A951782B7DCF7600CE32C8 /* ProfileCoordinator.swift in Sources */,
 				179072FF2B701AA80061009F /* UIFont+Extensions.swift in Sources */,
 				17A951722B7DCEDF00CE32C8 /* HomeCoordinator.swift in Sources */,
 				17A9517A2B7DD01000CE32C8 /* TabBarController.swift in Sources */,
 				179072CF2B7014B80061009F /* SceneDelegate.swift in Sources */,
+				17A951822B7F328600CE32C8 /* OnboardingViewPresenter.swift in Sources */,
 				17A293462B70911600FE2384 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
